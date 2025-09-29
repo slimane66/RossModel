@@ -1,16 +1,8 @@
 
 import io
-import os
-os.environ["MPLBACKEND"] = "Agg"  # headless backend for servers
-
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-
-
 import numpy as np
 import pandas as pd
-
+import matplotlib.pyplot as plt
 import streamlit as st
 
 # ---------------------------
