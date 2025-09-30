@@ -123,7 +123,7 @@ else:
     st.caption("Debug: répertoire courant = " + os.getcwd())
 
 # =============== Simulation ===============
-st.title("Seasonal malaria dynamics & R₀(t) — IPT-BIMS")
+st.title("Ross–Macdonald  model simulation & R₀(t) — IPT-BIMS")
 
 # Init conditions
 Sh, Ih, Rh = 999.0, 1.0, 0.0
