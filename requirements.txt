@@ -1,0 +1,10 @@
+streamlit
+matplotlib
+numpy
+pandas
+scipy
+
+# Only needed if you load code from notebooks
+nbformat>=5.10
+nbclient>=0.9
+
