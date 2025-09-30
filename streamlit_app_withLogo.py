@@ -83,8 +83,8 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Branding")
 # Your local logo file (as requested)
 # Résolution robuste du chemin du logo (gère script à la racine ou dans /pages)
-PREFERRED_LOGO2 = "image/logo_bims.png"
-PREFERRED_LOGO = "image/logo_IPT.png"
+PREFERRED_LOGO = "image/logo_bims.png"
+PREFERRED_LOGO2 = "image/logo_IPT.png"
 
 def resolve_logo_path(preferred: str) :
     # 1) Chemin relatif au répertoire de travail courant (CWD)
