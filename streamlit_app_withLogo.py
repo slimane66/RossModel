@@ -83,7 +83,8 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("Branding")
 # Your local logo file (as requested)
 # Résolution robuste du chemin du logo (gère script à la racine ou dans /pages)
-PREFERRED_LOGO = "image/logo_bims.png"
+PREFERRED_LOGO2 = "image/logo_bims.png"
+PREFERRED_LOGO = "image/logo_IPT.png"
 
 def resolve_logo_path(preferred: str) :
     # 1) Chemin relatif au répertoire de travail courant (CWD)
@@ -104,6 +105,7 @@ def resolve_logo_path(preferred: str) :
     return None
 
 logo_path = resolve_logo_path(PREFERRED_LOGO)
+logo_path2 = resolve_logo_path(PREFERRED_LOGO2)
 
 # Affichage du logo (header, sidebar, ou footer — à toi de choisir l’endroit)
 if logo_path:
@@ -197,7 +199,7 @@ st.divider()
 cols = st.columns([1, 3, 1])  # center the logo
 with cols[1]:
     if logo_path and os.path.exists(logo_path):
-        st.image(logo_path, use_container_width=False, caption="Developed by IPT-BIMS — 2025")
+        st.image(logo_path2, use_container_width=False, caption="Developed by IPT-BIMS — 2025")
     else:
         # message non bloquant si le fichier n'est pas trouvé
         st.caption("Developed by IPT-BIMS — 2025")
