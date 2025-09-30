@@ -198,11 +198,11 @@ st.pyplot(fig, clear_figure=True)
 st.divider()
 cols = st.columns([1, 3, 1])  # center the logo
 with cols[1]:
-    if logo_path2 and os.path.exists(logo_path):
+    if logo_path2 and os.path.exists(logo_path2):
         st.image(logo_path2, use_container_width=False, caption="Developed by IPT-BIMS — 2025")
     else:
         # message non bloquant si le fichier n'est pas trouvé
-        st.caption("Developed by IPT-BIMS — 2025")
+        st.caption("Developed by  BioInformatic, bioMathematics et bioStatistic - Institut Pasteur de Tunis. IPT-BIMS — 2025")
         if logo_path is None:
             st.info("Logo introuvable : vérifie que 'image/logo_bims.png' existe dans le dépôt ou ajuste le chemin.")
 
