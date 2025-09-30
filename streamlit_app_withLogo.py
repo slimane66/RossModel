@@ -198,7 +198,7 @@ st.pyplot(fig, clear_figure=True)
 st.divider()
 cols = st.columns([1, 3, 1])  # center the logo
 with cols[1]:
-    if logo_path and os.path.exists(logo_path):
+    if logo_path2 and os.path.exists(logo_path):
         st.image(logo_path2, use_container_width=False, caption="Developed by IPT-BIMS — 2025")
     else:
         # message non bloquant si le fichier n'est pas trouvé
