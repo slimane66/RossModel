@@ -13,7 +13,7 @@ matplotlib.use("Agg")  # safe for Streamlit
 import matplotlib.pyplot as plt
 import streamlit as st
 
-st.set_page_config(page_title="Seasonal R0 — Malaria (IPT-BIMS)", layout="wide")
+st.set_page_config(page_title="Seasonal R0 —  Ross–Macdonald  model (IPT-BIMS)", layout="wide")
 
 # =============== Helpers (self-contained) ===============
 
