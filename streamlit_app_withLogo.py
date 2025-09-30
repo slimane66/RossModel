@@ -109,9 +109,10 @@ logo_path2 = resolve_logo_path(PREFERRED_LOGO2)
 
 # Affichage du logo (header, sidebar, ou footer — à toi de choisir l’endroit)
 if logo_path:
-    cols = st.columns([1, 2, 1])  # trois colonnes, la du milieu fait 2x la largeur
-    with cols[1]:  # colonne du milieu
-        st.image("image/logo_bims.png", use_column_width=True, caption="Developed by IPT-BIMS — 2025")
+    cols = st.columns([2, 1, 2])  # colonne centrale plus large
+    with cols[1]:
+        st.image("image/logo_bims.png", use_container_width=True, caption="Developed by IPT-BIMS — 2025")
+
 else:
     # Aide au débogage non bloquante
     st.warning(
